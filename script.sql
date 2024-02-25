@@ -3,6 +3,7 @@ CREATE TABLE Carte (
   couleur VARCHAR(10),
   valeur VARCHAR(10)
 );
+
 CREATE TABLE PaquetCarte (
   id_paquet SERIAL PRIMARY KEY,
   taille INT,
@@ -40,11 +41,3 @@ CREATE TABLE Croupier (
 
 
 
-
-
-CREATE TABLE Croupier (
-  id_croupier SERIAL PRIMARY KEY,
-  valeurTotalMlt INT,
-  id_main INT,
-  FOREIGN KEY (id_main) REFERENCES Main(id_main)
-);
